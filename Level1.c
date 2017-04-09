@@ -17,10 +17,12 @@ extern FILE* fp;
 
 //------------------------------------------------------------------------------
 // Public Variables:
+int Level1_Counter;
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
 // Private Variables:
+int i=0;
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
@@ -31,12 +33,22 @@ extern FILE* fp;
 // Public Functions:
 //------------------------------------------------------------------------------
 void Load1(void){
+	FILE *fpRead = fopen("Level1_Counter.txt", "r");
+	if (fpRead == NULL)
+	{
+		return 0;
+	}
+	for (i = 0; i<10; i++)
+	{
+		fscanf(fpRead, "%d ", &Level1_Counter);
+	}
     fprintf(fp, "Level1:Load\n");
 }
 void Ini1(void){
     fprintf(fp, "Level1:Ini\n");
 }
 void Update1(void){
+	Level1_Counter--;
     fprintf(fp, "Level1:Update\n");
 }
 void Draw1(void){
