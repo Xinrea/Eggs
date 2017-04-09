@@ -1,6 +1,6 @@
 /* Project:		GSMPre
    File Name:	Input.c
-   Author:		
+   Author:		Áõ·¼
    Date:		2015-9-15
    Purpose:		ÊäÈëÄ£¿é  */
 
