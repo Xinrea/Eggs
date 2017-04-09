@@ -1,8 +1,8 @@
 /* Project:		GSMPre
-   File Name:	Input.h
+   File Name:	Level2.h
    Author:		Kobe
-   Date:		2015-9-15
-   Purpose:		输入模块  */
+   Date:		2017-4-9
+   Purpose:		LEVEL  */
 
 #ifndef _Level2
 #define _Level2
@@ -26,11 +26,11 @@
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
-int Load2(void);
-int Ini2(void);
-int Update2(void);
-int Draw2(void);
-int Free2(void);
-int Unload2(void);
+void Load2(void);
+void Ini2(void);
+void Update2(void);
+void Draw2(void);
+void Free2(void);
+void Unload2(void);
 
 #endif

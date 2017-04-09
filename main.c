@@ -7,7 +7,12 @@
 #include "System.h"
 #include "Input.h"
 #include "GameStateList.h"
+#include "GameStateManager.h"
+#include "stdio.h"
 
+#define FILE_PATH "output.txt"
+
+FILE *fp;
 //------------------------------------------------------------------------------
 // Private Consts:
 //------------------------------------------------------------------------------
@@ -33,6 +38,9 @@
 //------------------------------------------------------------------------------
 
 int main(){
+    fp=fopen(FILE_PATH,"a+");
+    System_Initialize();
+    GSM_Initialize();
     return 0;
 }
 

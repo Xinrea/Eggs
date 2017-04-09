@@ -1,15 +1,4 @@
 "C:\Program Files (x86)\JetBrains\CLion 2016.3.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Xinrea\Documents\GitHub\GameDesign
 -- Configuring done
-CMake Error at CMakeLists.txt:15 (add_executable):
-  Cannot find source file:
-
-    cmake-build-debug/GameStateManager.c
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
-  .hxx .in .txx
-
-
-CMake Error: CMake can not determine linker language for target: GameDesign
-CMake Error: Cannot determine link language for target "GameDesign".
 -- Generating done
 -- Build files have been written to: C:/Users/Xinrea/Documents/GitHub/GameDesign/cmake-build-debug

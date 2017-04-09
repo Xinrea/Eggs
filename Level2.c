@@ -1,11 +1,12 @@
 /* Project:		GSMPre
-   File Name:	GameStateManager.c
+   File Name:	Level2.c
    Author:		Kobe
-   Date:		2017-4-8
-   Purpose:		GSM */
+   Date:		2017-4-9
+   Purpose:		LEVEL */
 
 #include "Level2.h"
-
+#include "stdio.h"
+extern FILE* fp;
 //------------------------------------------------------------------------------
 // Private Consts:
 //------------------------------------------------------------------------------
@@ -29,22 +30,22 @@
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
-int Load2(void){
+void Load2(void){
     fprintf(fp, "Level2:Load\n");
 }
-int Ini2(void){
+void Ini2(void){
     fprintf(fp, "Level2:Ini\n");
 }
-int Update2(void){
+void Update2(void){
     fprintf(fp, "Level2:Update\n");
 }
-int Draw2(void){
+void Draw2(void){
     fprintf(fp, "Level2:Draw\n");
 }
-int Free2(void){
+void Free2(void){
     fprintf(fp, "Level2:Free\n");
 }
-int Unload2(void){
+void Unload2(void){
     fprintf(fp, "Level2:Unload\n");
 }
 
