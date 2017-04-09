@@ -1,6 +1,6 @@
 /* Project:		GSMPre
    File Name:	Input.h
-   Author:		刘芳
+   Author:		Kobe
    Date:		2015-9-15
    Purpose:		输入模块  */
 
@@ -26,6 +26,11 @@
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
-
+int Load2(void);
+int Ini2(void);
+int Update2(void);
+int Draw2(void);
+int Free2(void);
+int Unload2(void);
 
 #endif
