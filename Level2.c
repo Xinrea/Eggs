@@ -1,6 +1,6 @@
 /* Project:		GSMPre
    File Name:	GameStateManager.c
-   Author:		Xinrea
+   Author:		Kobe
    Date:		2017-4-8
    Purpose:		GSM */
 
@@ -29,9 +29,24 @@
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
-
-
-
+int Load2(void){
+    fprintf(fp, "Level2:Load\n");
+}
+int Ini2(void){
+    fprintf(fp, "Level2:Ini\n");
+}
+int Update2(void){
+    fprintf(fp, "Level2:Update\n");
+}
+int Draw2(void){
+    fprintf(fp, "Level2:Draw\n");
+}
+int Free2(void){
+    fprintf(fp, "Level2:Free\n");
+}
+int Unload2(void){
+    fprintf(fp, "Level2:Unload\n");
+}
 
 //------------------------------------------------------------------------------
 // Private Functions:
