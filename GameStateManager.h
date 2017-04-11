@@ -1,7 +1,7 @@
 /* Project:		GSMPre
    File Name:	GameStateManager.h
    Author:		Xinrea
-   Date:		2017-4-8
+   Date:		2017-4-11
    Purpose:		GSM */
 
 #ifndef _GameStateManager
@@ -32,6 +32,7 @@ void (*Update )(void);
 void (*Draw )(void);
 void (*Free )(void);
 void (*Unload )(void);
+int GS;
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------

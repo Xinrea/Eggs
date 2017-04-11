@@ -1,7 +1,7 @@
 /* Project:		GSMPre
    File Name:	Main.c
    Author:		Xinrea
-   Date:		2017-4-8
+   Date:		2017-4-11
    Purpose:		主程序模块  */
 
 #include "System.h"
@@ -11,7 +11,6 @@
 #include "stdio.h"
 
 #define FILE_PATH "output.txt"
-
 FILE *fp;
 //------------------------------------------------------------------------------
 // Private Consts:
@@ -41,6 +40,9 @@ int main(){
     fp=fopen(FILE_PATH,"a+");
     System_Initialize();
     GSM_Initialize();
+    while(GS!=GS_Quit){
+
+    }
     return 0;
 }
 

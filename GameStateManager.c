@@ -1,10 +1,11 @@
 /* Project:		GSMPre
    File Name:	GameStateManager.c
    Author:		Xinrea
-   Date:		2017-4-9
+   Date:		2017-4-11
    Purpose:		GSM */
 
 #include "GameStateManager.h"
+#include "GameStateList.h"
 #include "Level1.h"
 #include "Level2.h"
 #include "stdio.h"
@@ -38,6 +39,7 @@ void GSM_Initialize(){
     State.Previous=State_Level1;
     State.Current=State_Level1;
     State.Next=State_Level1;
+    GS=GS_L1;
     fprintf(fp,"GSM:Initialize\n");
 }
 
