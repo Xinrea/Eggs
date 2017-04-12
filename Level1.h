@@ -26,11 +26,11 @@
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
-void Load1(void);
-void Ini1(void);
-void Update1(void);
-void Draw1(void);
-void Free1(void);
-void Unload1(void);
+extern void Load1(void);
+extern void Ini1(void);
+extern void Update1(void);
+extern void Draw1(void);
+extern void Free1(void);
+extern void Unload1(void);
 
 #endif
