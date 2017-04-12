@@ -42,11 +42,11 @@ int main(){
     System_Initialize();
     GSM_Initialize();
     while(GS!=GS_Quit){
-        if(GS=GS_L1){
+        if(GS==GS_L1){
             State.Current=State_Level1;
             State.Next=State_Level2;
         }
-        if(GS=GS_L2){
+        if(GS==GS_L2){
             State.Previous=State.Current;
             State.Current=State.Next;
             State.Next=State_Quit;
@@ -63,10 +63,10 @@ int main(){
             }
             Lives--;
             if(Lives>0)GS=GS_Restart;
-            else if(GS=GS_L1)GS=GS_L2;
+            else if(GS==GS_L1)GS=GS_L2;
             else GS=GS_Quit;
             Free();
-        }while(GS=GS_Restart);
+        }while(GS==GS_Restart);
             Unload();
         }
     System_Exit();

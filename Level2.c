@@ -36,7 +36,7 @@ void Load2(void){
 	FILE *fpRead1 = fopen("Level2_Lives.txt", "r");
 	if (fpRead1 == NULL)
 	{
-		return 0;
+		return;
 	}
 	fscanf(fpRead1, "%d ", &Lives);
     fprintf(fp, "Level2:Load\n");
@@ -45,9 +45,9 @@ void Ini2(void){
 	FILE *fpRead2 = fopen("Level2_Counter.txt", "r");
 	if (fpRead2 == NULL)
 	{
-		return 0;
+		return;
 	}
-	fscanf(fpRead2, "%d ", &Level2_Counter);
+	fscanf(fpRead2, "%d ", &Counter);
     fprintf(fp, "Level2:Ini\n");
 }
 void Update2(void){
