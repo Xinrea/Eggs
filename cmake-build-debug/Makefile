@@ -122,6 +122,168 @@ GameDesign/fast:
 	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/build
 .PHONY : GameDesign/fast
 
+GameStateManager.obj: GameStateManager.c.obj
+
+.PHONY : GameStateManager.obj
+
+# target to build an object file
+GameStateManager.c.obj:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/GameStateManager.c.obj
+.PHONY : GameStateManager.c.obj
+
+GameStateManager.i: GameStateManager.c.i
+
+.PHONY : GameStateManager.i
+
+# target to preprocess a source file
+GameStateManager.c.i:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/GameStateManager.c.i
+.PHONY : GameStateManager.c.i
+
+GameStateManager.s: GameStateManager.c.s
+
+.PHONY : GameStateManager.s
+
+# target to generate assembly for a file
+GameStateManager.c.s:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/GameStateManager.c.s
+.PHONY : GameStateManager.c.s
+
+Input.obj: Input.c.obj
+
+.PHONY : Input.obj
+
+# target to build an object file
+Input.c.obj:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Input.c.obj
+.PHONY : Input.c.obj
+
+Input.i: Input.c.i
+
+.PHONY : Input.i
+
+# target to preprocess a source file
+Input.c.i:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Input.c.i
+.PHONY : Input.c.i
+
+Input.s: Input.c.s
+
+.PHONY : Input.s
+
+# target to generate assembly for a file
+Input.c.s:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Input.c.s
+.PHONY : Input.c.s
+
+Level1.obj: Level1.c.obj
+
+.PHONY : Level1.obj
+
+# target to build an object file
+Level1.c.obj:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level1.c.obj
+.PHONY : Level1.c.obj
+
+Level1.i: Level1.c.i
+
+.PHONY : Level1.i
+
+# target to preprocess a source file
+Level1.c.i:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level1.c.i
+.PHONY : Level1.c.i
+
+Level1.s: Level1.c.s
+
+.PHONY : Level1.s
+
+# target to generate assembly for a file
+Level1.c.s:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level1.c.s
+.PHONY : Level1.c.s
+
+Level2.obj: Level2.c.obj
+
+.PHONY : Level2.obj
+
+# target to build an object file
+Level2.c.obj:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level2.c.obj
+.PHONY : Level2.c.obj
+
+Level2.i: Level2.c.i
+
+.PHONY : Level2.i
+
+# target to preprocess a source file
+Level2.c.i:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level2.c.i
+.PHONY : Level2.c.i
+
+Level2.s: Level2.c.s
+
+.PHONY : Level2.s
+
+# target to generate assembly for a file
+Level2.c.s:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level2.c.s
+.PHONY : Level2.c.s
+
+System.obj: System.c.obj
+
+.PHONY : System.obj
+
+# target to build an object file
+System.c.obj:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/System.c.obj
+.PHONY : System.c.obj
+
+System.i: System.c.i
+
+.PHONY : System.i
+
+# target to preprocess a source file
+System.c.i:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/System.c.i
+.PHONY : System.c.i
+
+System.s: System.c.s
+
+.PHONY : System.s
+
+# target to generate assembly for a file
+System.c.s:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/System.c.s
+.PHONY : System.c.s
+
+main.obj: main.c.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.c.obj:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/main.c.obj
+.PHONY : main.c.obj
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -131,6 +293,24 @@ help:
 	@echo ... rebuild_cache
 	@echo ... GameDesign
 	@echo ... edit_cache
+	@echo ... GameStateManager.obj
+	@echo ... GameStateManager.i
+	@echo ... GameStateManager.s
+	@echo ... Input.obj
+	@echo ... Input.i
+	@echo ... Input.s
+	@echo ... Level1.obj
+	@echo ... Level1.i
+	@echo ... Level1.s
+	@echo ... Level2.obj
+	@echo ... Level2.i
+	@echo ... Level2.s
+	@echo ... System.obj
+	@echo ... System.i
+	@echo ... System.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

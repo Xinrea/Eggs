@@ -56,7 +56,186 @@ include CMakeFiles/GameDesign.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GameDesign.dir/flags.make
 
-CMakeFiles/GameDesign.dir/requires:
+CMakeFiles/GameDesign.dir/main.c.obj: CMakeFiles/GameDesign.dir/flags.make
+CMakeFiles/GameDesign.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/GameDesign.dir/main.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GameDesign.dir\main.c.obj   -c C:\Users\Xinrea\Documents\GitHub\GameDesign\main.c
+
+CMakeFiles/GameDesign.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GameDesign.dir/main.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Xinrea\Documents\GitHub\GameDesign\main.c > CMakeFiles\GameDesign.dir\main.c.i
+
+CMakeFiles/GameDesign.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GameDesign.dir/main.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Xinrea\Documents\GitHub\GameDesign\main.c -o CMakeFiles\GameDesign.dir\main.c.s
+
+CMakeFiles/GameDesign.dir/main.c.obj.requires:
+
+.PHONY : CMakeFiles/GameDesign.dir/main.c.obj.requires
+
+CMakeFiles/GameDesign.dir/main.c.obj.provides: CMakeFiles/GameDesign.dir/main.c.obj.requires
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/main.c.obj.provides.build
+.PHONY : CMakeFiles/GameDesign.dir/main.c.obj.provides
+
+CMakeFiles/GameDesign.dir/main.c.obj.provides.build: CMakeFiles/GameDesign.dir/main.c.obj
+
+
+CMakeFiles/GameDesign.dir/GameStateManager.c.obj: CMakeFiles/GameDesign.dir/flags.make
+CMakeFiles/GameDesign.dir/GameStateManager.c.obj: ../GameStateManager.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/GameDesign.dir/GameStateManager.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GameDesign.dir\GameStateManager.c.obj   -c C:\Users\Xinrea\Documents\GitHub\GameDesign\GameStateManager.c
+
+CMakeFiles/GameDesign.dir/GameStateManager.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GameDesign.dir/GameStateManager.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Xinrea\Documents\GitHub\GameDesign\GameStateManager.c > CMakeFiles\GameDesign.dir\GameStateManager.c.i
+
+CMakeFiles/GameDesign.dir/GameStateManager.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GameDesign.dir/GameStateManager.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Xinrea\Documents\GitHub\GameDesign\GameStateManager.c -o CMakeFiles\GameDesign.dir\GameStateManager.c.s
+
+CMakeFiles/GameDesign.dir/GameStateManager.c.obj.requires:
+
+.PHONY : CMakeFiles/GameDesign.dir/GameStateManager.c.obj.requires
+
+CMakeFiles/GameDesign.dir/GameStateManager.c.obj.provides: CMakeFiles/GameDesign.dir/GameStateManager.c.obj.requires
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/GameStateManager.c.obj.provides.build
+.PHONY : CMakeFiles/GameDesign.dir/GameStateManager.c.obj.provides
+
+CMakeFiles/GameDesign.dir/GameStateManager.c.obj.provides.build: CMakeFiles/GameDesign.dir/GameStateManager.c.obj
+
+
+CMakeFiles/GameDesign.dir/System.c.obj: CMakeFiles/GameDesign.dir/flags.make
+CMakeFiles/GameDesign.dir/System.c.obj: ../System.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/GameDesign.dir/System.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GameDesign.dir\System.c.obj   -c C:\Users\Xinrea\Documents\GitHub\GameDesign\System.c
+
+CMakeFiles/GameDesign.dir/System.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GameDesign.dir/System.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Xinrea\Documents\GitHub\GameDesign\System.c > CMakeFiles\GameDesign.dir\System.c.i
+
+CMakeFiles/GameDesign.dir/System.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GameDesign.dir/System.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Xinrea\Documents\GitHub\GameDesign\System.c -o CMakeFiles\GameDesign.dir\System.c.s
+
+CMakeFiles/GameDesign.dir/System.c.obj.requires:
+
+.PHONY : CMakeFiles/GameDesign.dir/System.c.obj.requires
+
+CMakeFiles/GameDesign.dir/System.c.obj.provides: CMakeFiles/GameDesign.dir/System.c.obj.requires
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/System.c.obj.provides.build
+.PHONY : CMakeFiles/GameDesign.dir/System.c.obj.provides
+
+CMakeFiles/GameDesign.dir/System.c.obj.provides.build: CMakeFiles/GameDesign.dir/System.c.obj
+
+
+CMakeFiles/GameDesign.dir/Level1.c.obj: CMakeFiles/GameDesign.dir/flags.make
+CMakeFiles/GameDesign.dir/Level1.c.obj: ../Level1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/GameDesign.dir/Level1.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GameDesign.dir\Level1.c.obj   -c C:\Users\Xinrea\Documents\GitHub\GameDesign\Level1.c
+
+CMakeFiles/GameDesign.dir/Level1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GameDesign.dir/Level1.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Xinrea\Documents\GitHub\GameDesign\Level1.c > CMakeFiles\GameDesign.dir\Level1.c.i
+
+CMakeFiles/GameDesign.dir/Level1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GameDesign.dir/Level1.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Xinrea\Documents\GitHub\GameDesign\Level1.c -o CMakeFiles\GameDesign.dir\Level1.c.s
+
+CMakeFiles/GameDesign.dir/Level1.c.obj.requires:
+
+.PHONY : CMakeFiles/GameDesign.dir/Level1.c.obj.requires
+
+CMakeFiles/GameDesign.dir/Level1.c.obj.provides: CMakeFiles/GameDesign.dir/Level1.c.obj.requires
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level1.c.obj.provides.build
+.PHONY : CMakeFiles/GameDesign.dir/Level1.c.obj.provides
+
+CMakeFiles/GameDesign.dir/Level1.c.obj.provides.build: CMakeFiles/GameDesign.dir/Level1.c.obj
+
+
+CMakeFiles/GameDesign.dir/Level2.c.obj: CMakeFiles/GameDesign.dir/flags.make
+CMakeFiles/GameDesign.dir/Level2.c.obj: ../Level2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/GameDesign.dir/Level2.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GameDesign.dir\Level2.c.obj   -c C:\Users\Xinrea\Documents\GitHub\GameDesign\Level2.c
+
+CMakeFiles/GameDesign.dir/Level2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GameDesign.dir/Level2.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Xinrea\Documents\GitHub\GameDesign\Level2.c > CMakeFiles\GameDesign.dir\Level2.c.i
+
+CMakeFiles/GameDesign.dir/Level2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GameDesign.dir/Level2.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Xinrea\Documents\GitHub\GameDesign\Level2.c -o CMakeFiles\GameDesign.dir\Level2.c.s
+
+CMakeFiles/GameDesign.dir/Level2.c.obj.requires:
+
+.PHONY : CMakeFiles/GameDesign.dir/Level2.c.obj.requires
+
+CMakeFiles/GameDesign.dir/Level2.c.obj.provides: CMakeFiles/GameDesign.dir/Level2.c.obj.requires
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Level2.c.obj.provides.build
+.PHONY : CMakeFiles/GameDesign.dir/Level2.c.obj.provides
+
+CMakeFiles/GameDesign.dir/Level2.c.obj.provides.build: CMakeFiles/GameDesign.dir/Level2.c.obj
+
+
+CMakeFiles/GameDesign.dir/Input.c.obj: CMakeFiles/GameDesign.dir/flags.make
+CMakeFiles/GameDesign.dir/Input.c.obj: ../Input.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/GameDesign.dir/Input.c.obj"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\GameDesign.dir\Input.c.obj   -c C:\Users\Xinrea\Documents\GitHub\GameDesign\Input.c
+
+CMakeFiles/GameDesign.dir/Input.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/GameDesign.dir/Input.c.i"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Xinrea\Documents\GitHub\GameDesign\Input.c > CMakeFiles\GameDesign.dir\Input.c.i
+
+CMakeFiles/GameDesign.dir/Input.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/GameDesign.dir/Input.c.s"
+	C:\PROGRA~2\Dev-Cpp\MinGW64\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Xinrea\Documents\GitHub\GameDesign\Input.c -o CMakeFiles\GameDesign.dir\Input.c.s
+
+CMakeFiles/GameDesign.dir/Input.c.obj.requires:
+
+.PHONY : CMakeFiles/GameDesign.dir/Input.c.obj.requires
+
+CMakeFiles/GameDesign.dir/Input.c.obj.provides: CMakeFiles/GameDesign.dir/Input.c.obj.requires
+	$(MAKE) -f CMakeFiles\GameDesign.dir\build.make CMakeFiles/GameDesign.dir/Input.c.obj.provides.build
+.PHONY : CMakeFiles/GameDesign.dir/Input.c.obj.provides
+
+CMakeFiles/GameDesign.dir/Input.c.obj.provides.build: CMakeFiles/GameDesign.dir/Input.c.obj
+
+
+# Object files for target GameDesign
+GameDesign_OBJECTS = \
+"CMakeFiles/GameDesign.dir/main.c.obj" \
+"CMakeFiles/GameDesign.dir/GameStateManager.c.obj" \
+"CMakeFiles/GameDesign.dir/System.c.obj" \
+"CMakeFiles/GameDesign.dir/Level1.c.obj" \
+"CMakeFiles/GameDesign.dir/Level2.c.obj" \
+"CMakeFiles/GameDesign.dir/Input.c.obj"
+
+# External object files for target GameDesign
+GameDesign_EXTERNAL_OBJECTS =
+
+GameDesign.exe: CMakeFiles/GameDesign.dir/main.c.obj
+GameDesign.exe: CMakeFiles/GameDesign.dir/GameStateManager.c.obj
+GameDesign.exe: CMakeFiles/GameDesign.dir/System.c.obj
+GameDesign.exe: CMakeFiles/GameDesign.dir/Level1.c.obj
+GameDesign.exe: CMakeFiles/GameDesign.dir/Level2.c.obj
+GameDesign.exe: CMakeFiles/GameDesign.dir/Input.c.obj
+GameDesign.exe: CMakeFiles/GameDesign.dir/build.make
+GameDesign.exe: CMakeFiles/GameDesign.dir/linklibs.rsp
+GameDesign.exe: CMakeFiles/GameDesign.dir/objects1.rsp
+GameDesign.exe: CMakeFiles/GameDesign.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Xinrea\Documents\GitHub\GameDesign\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable GameDesign.exe"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GameDesign.dir\link.txt --verbose=$(VERBOSE)
+
+# Rule to build all files generated by this target.
+CMakeFiles/GameDesign.dir/build: GameDesign.exe
+
+.PHONY : CMakeFiles/GameDesign.dir/build
+
+CMakeFiles/GameDesign.dir/requires: CMakeFiles/GameDesign.dir/main.c.obj.requires
+CMakeFiles/GameDesign.dir/requires: CMakeFiles/GameDesign.dir/GameStateManager.c.obj.requires
+CMakeFiles/GameDesign.dir/requires: CMakeFiles/GameDesign.dir/System.c.obj.requires
+CMakeFiles/GameDesign.dir/requires: CMakeFiles/GameDesign.dir/Level1.c.obj.requires
+CMakeFiles/GameDesign.dir/requires: CMakeFiles/GameDesign.dir/Level2.c.obj.requires
+CMakeFiles/GameDesign.dir/requires: CMakeFiles/GameDesign.dir/Input.c.obj.requires
 
 .PHONY : CMakeFiles/GameDesign.dir/requires
 
