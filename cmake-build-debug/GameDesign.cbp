@@ -82,6 +82,54 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/GameStateList.h">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/GameStateManager.c">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/GameStateManager.h">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Input.c">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Input.h">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level1.c">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level1.h">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level1_Counter.txt">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level2.c">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level2.h">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level2_Counter.txt">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/Level2_Lives.txt">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/README.md">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/System.c">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/System.h">
+			<Option target="GameDesign"/>
+		</Unit>
+		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/main.c">
+			<Option target="GameDesign"/>
+		</Unit>
 		<Unit filename="C:/Users/Xinrea/Documents/GitHub/GameDesign/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
