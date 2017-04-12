@@ -17,8 +17,8 @@ extern FILE* fp;
 
 //------------------------------------------------------------------------------
 // Public Variables:
-int Level2_Counter;
-int Level2_Lives;
+extern int Counter;
+extern int Lives;
 //------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------
@@ -38,10 +38,7 @@ void Load2(void){
 	{
 		return 0;
 	}
-	for (i = 0; i<10; i++)
-	{
-		fscanf(fpRead1, "%d ", &Level2_Lives);
-	}
+	fscanf(fpRead1, "%d ", &Lives);
     fprintf(fp, "Level2:Load\n");
 }
 void Ini2(void){
@@ -50,14 +47,11 @@ void Ini2(void){
 	{
 		return 0;
 	}
-	for (i = 0; i<10; i++)
-	{
-		fscanf(fpRead2, "%d ", &Level2_Counter);
-	}
+	fscanf(fpRead2, "%d ", &Level2_Counter);
     fprintf(fp, "Level2:Ini\n");
 }
 void Update2(void){
-	Level2_Counter--;
+	Counter--;
     fprintf(fp, "Level2:Update\n");
 }
 void Draw2(void){
