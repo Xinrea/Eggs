@@ -4,13 +4,11 @@
    Date:		2017-4-11
    Purpose:		主程序模块  */
 
+#include <windows.h>
 #include "System.h"
-#include "Input.h"
 #include "GameStateList.h"
 #include "GameStateManager.h"
-#include "stdio.h"
 
-#define FILE_PATH "output.txt"
 FILE *fp;
 //------------------------------------------------------------------------------
 // Private Consts:
@@ -37,9 +35,8 @@ int Lives=1;
 // Public Functions:
 //------------------------------------------------------------------------------
 
-int main(){
-    fp=fopen(FILE_PATH,"a+");
-    System_Initialize();
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
+    System_Initialize(hInstance, nCmdShow);;
     GSM_Initialize();
     while(GS!=GS_Quit){
         if(GS==GS_L1){
@@ -57,7 +54,7 @@ int main(){
         do {
             Init();
             while (Counter > 0) {
-                Input_Handle();
+                //Input_Handle();
                 Update();
                 Draw();
             }

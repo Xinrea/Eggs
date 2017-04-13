@@ -1,0 +1,113 @@
+Alpha引擎中与图形绘制相关的常量及函数功能说明（常量和函数来自AEGraphics.h）
+
+1. 常量
+
+1.1 AEGfxRenderMode 绘制模式
+
+	AE_GFX_RM_NONE		//无绘制模式 
+	AE_GFX_RM_COLOR		//色块绘制模式：网格或者几何图形对象绘制请选择该模式
+	AE_GFX_RM_TEXTURE	//纹理绘制模式：有衣服穿的对象绘制请选择该模式
+
+1.2 AEGfxBlendMode 混色模式（使用过photoshop等软件的同学会比较熟悉以下设置的功用，如果不熟悉最直接的办法是试用，比较区别）
+
+	AE_GFX_BM_NONE = 0	//无
+	AE_GFX_BM_BLEND		//色彩的直接混合，就好像在调色盘里把不同的颜色混合在一起
+	AE_GFX_BM_ADD		//色彩的叠加混合，不同颜色的透明玻璃纸叠放在一起
+	AE_GFX_BM_MULTIPLY	//色彩增值，保留暗色调，去除亮色调
+
+1.3 AEGfxTextureMode 纹理模式
+
+	AE_GFX_TM_PRECISE = 0	//精确
+	AE_GFX_TM_AVERAGE	//平均
+
+1.4 AEGfxMeshDrawMode 网格绘制模式
+
+	AE_GFX_MDM_POINTS = 0	//绘制点
+	AE_GFX_MDM_LINES	//绘制直线
+	AE_GFX_MDM_LINES_STRIP	//连线绘图方式：将点用线条连接起来
+	AE_GFX_MDM_TRIANGLES	//绘制三角形
+
+1.5 WorldOriginMode 世界坐标系原点定义
+
+	AE_WOM_NORMAL = 0	//屏幕中心为原点
+	AE_WOM_TOP_LEFT		//屏幕左上角为原点
+
+2. 函数（跳过了使用者可忽略的“内部函数”）
+
+2.1 void AEGfxSetBackgroundColor(float Red, float Green, float Blue);	// 背景色设置，参数是R G B三通道的数值
+
+2.2 void AEGfxSetRenderMode(unsigned int RenderMode); // 绘制模式设置，参数值见1.1AEGfxRenderMode 绘制模式
+
+2.3 f32 AEGfxGetWinMinX(void);						// 窗口左边X坐标，f32为32位float类型
+    f32 AEGfxGetWinMaxX(void);						// 窗口右边X坐标
+    f32 AEGfxGetWinMinY(void);	  					// 窗口顶边Y坐标
+    f32 AEGfxGetWinMaxY(void);  					// 窗口底边Y坐标
+
+2.4 void AEGfxSetCamPosition(f32 X, f32 Y);  				// 设置摄像机位置
+    void AEGfxGetCamPosition(f32 *pX, f32 *pY);				// 获得摄像机位置
+
+2.5 void AEGfxSetTransform(float pTransform[3][3]);			// 设置2D变换矩阵，这是我们一定会使用的
+    void AEGfxSetTransform3D(float pTransform[4][4]);			// 设置3D变换矩阵，3D游戏会用到
+    void AEGfxSetFullTransform(float PosX, float PosY, float RotAngleDeg, float ScaleX, float ScaleY);
+									// 给定位置、角度、尺寸信息，形成2D变换矩阵
+									// 这个函数请自己实现，不许用现成的！
+
+2.6 void AEGfxSetBlendColor(float Red, float Green, float Blue, float Alpha);
+									// 设置用于混色的三原色及透明度，透明度[0，1]
+
+2.7 void AEGfxSetTransparency(float Alpha);				// 设置透明度
+
+2.8 void AEGfxSetTintColor(float Red, float Green, float Blue, float Alpha);
+									// 设置用于染色的三原色及透明度
+
+2.9 void AEGfxSetBlendMode(unsigned int BlendMode);			// 设置混色模式，参数见1.2 混色模式
+
+
+2.10 void AEGfxSetWorldOriginMode(unsigned int WorldOriginMode);	// 设置世界坐标系模式，参数见1.4 世界坐标系原点
+
+2.11 以下是一组用于对象网格定义的语句，使用方法见WinAlpha项目
+	void	AEGfxMeshStart();
+	void	AEGfxTriAdd(f32 x0, f32 y0, u32 c0, f32 tu0, f32 tv0,
+			    f32 x1, f32 y1, u32 c1, f32 tu1, f32 tv1,
+			    f32 x2, f32 y2, u32 c2, f32 tu2, f32 tv2);
+	void	AEGfxVertexAdd(f32 x0, f32 y0, u32 c0, f32 tu0, f32 tv0);
+	AEGfxVertexList*	AEGfxMeshEnd();
+	void	AEGfxMeshDraw(AEGfxVertexList* pVertexList, unsigned int MeshDrawMode);
+	void	AEGfxMeshFree	(AEGfxVertexList* pVertexList);
+
+2.12 AEGfxTexture* AEGfxTextureLoad(const char *pFileName);		// 从外部文件载入纹理
+     void AEGfxTextureUnload(AEGfxTexture *pTexture);			// 卸载纹理
+     void AEGfxTextureSet(AEGfxTexture *pTexture, f32 offset_x, f32 offset_y);
+									// 为对象设置纹理，没有则用NULL
+									// 包含单张纹理帧时，offset_x及offset_y均为0时，纹理中心点与对象形状中心点重合
+									// 包含多张纹理帧时，需要配合两个三角形的矩形定义使用，具体见“游戏中的对象-动画效果”
+     AEGfxTexture* AEGfxTextureLoadFromMemory(unsigned char *pColors, unsigned int Width, unsigned int Height);
+									// 从内存载入纹理
+     void AEGfxSaveTextureToFile(AEGfxTexture* pTexture, char *pFileName);
+									// 将纹理存入外部文件
+
+2.13 void AEGfxSetTextureMode(unsigned int TextureMode);		// 设置纹理模式，参数见1.3
+
+2.14 以下函数用于绘制基本图形，请不要使用，因为可能会导致绘制效率降低
+     void AEGfxPoint(f32 x0, f32 y0, f32 z0, u32 c0);			// 点绘制 X Y Z Color
+     void AEGfxLine(f32 x0, f32 y0, f32 z0, f32 r0, f32 g0, f32 b0, f32 a0, f32 x1, f32 y1, f32 z1, f32 r1, f32 g1, f32 b1, f32 a1);
+									// 直线绘制，参数为直线两端点的坐标，rgb颜色及透明度
+     void AEGfxTri(f32 x0, f32 y0, f32 z0, u32 c0, 
+		   f32 x1, f32 y1, f32 z1, u32 c1, 
+		   f32 x2, f32 y2, f32 z2, u32 c2);			// 三角形绘制，参数为顶点坐标和颜色
+     void AEGfxQuad(f32 x0, f32 y0, f32 z0, u32 c0, 
+		    f32 x1, f32 y1, f32 z1, u32 c1, 
+		    f32 x2, f32 y2, f32 z2, u32 c2, 
+		    f32 x3, f32 y3, f32 z3, u32 c3);			// 四边形绘制，参数为顶点坐标和颜色
+     void AEGfxBox(f32 x0, f32 y0, f32 z0, f32 sizeX, f32 sizeY, f32 sizeZ, u32 c0, u32 c1);
+									// 立体盒子绘制，参数为中心点位置及大小
+     void AEGfxSphere(f32 x0, f32 y0, f32 z0, f32 radius, u32 c0, u32 c1, u32 division);
+									// 球形绘制
+     void AEGfxCone(f32 x0, f32 y0, f32 z0, f32 x1, f32 y1, f32 z1, f32 radius, u32 c0, u32 c1, u32 division);
+									// 圆锥体绘制
+     void AEGfxAxis(f32 scale);						// 轴线绘制
+
+     
+
+
+
