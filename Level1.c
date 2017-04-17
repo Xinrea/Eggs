@@ -36,7 +36,7 @@ void Load1(void){
 	FILE *fpRead = fopen("Level1_Counter.txt", "r");
 	if (fpRead == NULL)
 	{
-		return 0;
+		return;
 	}
 	fscanf(fpRead, "%d ", &Counter);
     fprintf(fp, "Level1:Load\n");

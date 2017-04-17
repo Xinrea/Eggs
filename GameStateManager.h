@@ -38,5 +38,8 @@ int GS;
 //------------------------------------------------------------------------------
 void GSM_Initialize(void);
 void GSM_Update(void);
+void State_Level1();
+void State_Level2();
+void State_Quit();
 
 #endif

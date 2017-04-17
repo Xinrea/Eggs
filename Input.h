@@ -28,6 +28,6 @@
 //------------------------------------------------------------------------------
 
 // ¥¶¿Ì ‰»Î
-void Input_Handle(void);
+LRESULT CALLBACK Input_Handle(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 #endif

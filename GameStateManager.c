@@ -29,16 +29,14 @@ extern FILE* fp;
 //------------------------------------------------------------------------------
 // Private Function Declarations:
 //------------------------------------------------------------------------------
-void State_Level1();
-void State_Level2();
-void State_Quit();
+
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
 void GSM_Initialize(){
     State.Previous=State_Level1;
     State.Current=State_Level1;
-    State.Next=State_Level1;
+    State.Next=State_Level2;
     GS=GS_L1;
     fprintf(fp,"GSM:Initialize\n");
 }

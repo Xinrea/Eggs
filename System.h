@@ -7,6 +7,8 @@
 #ifndef _System
 #define _System
 
+#include <windows.h>
+#include <stdio.h>
 //------------------------------------------------------------------------------
 // Typedef:
 //------------------------------------------------------------------------------
@@ -26,7 +28,7 @@
 //------------------------------------------------------------------------------
 // Public Functions:
 //------------------------------------------------------------------------------
-void System_Initialize(void);
-void System_Exit(void);
+extern int System_Initialize(HINSTANCE, int);
+extern void System_Exit(void);
 
 #endif
