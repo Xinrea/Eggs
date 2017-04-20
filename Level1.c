@@ -8,6 +8,7 @@
 #include "stdio.h"
 #include "GameStateList.h"
 #include "System.h"
+#include "lib/AEEngine.h"
 extern FILE* fp;
 //------------------------------------------------------------------------------
 // Private Consts:
