@@ -19,6 +19,7 @@ set(SOURCE_FILES
         lib/AETypes.h
         lib/AEUtil.h
         lib/AEVec2.h
+        lib/Alpha_Engine.lib
         GameStateList.h
         GameStateManager.c
         GameStateManager.h
