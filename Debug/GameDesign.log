@@ -1,21 +1,15 @@
-﻿  main.c
-main.c(44): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
-main.c(45): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
-main.c(50): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
-  System.c
+﻿  System.c
 System.c(56): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
+  main.c
   Level2.c
-Level2.c(38): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Level2.c(40): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-Level2.c(43): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+Level2.c(45): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
   Level1.c
   Input.c
   GameStateManager.c
-GameStateManager.c(37): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
-GameStateManager.c(38): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
-GameStateManager.c(39): warning C4113: “void (__cdecl *)()”和“void (__cdecl *)(void)”的参数列表不同
   正在生成代码...
   GameDesign.vcxproj -> C:\Users\Xinrea\Documents\GitHub\GameDesign\Debug\GameDesign.exe
   GameDesign.vcxproj -> C:\Users\Xinrea\Documents\GitHub\GameDesign\Debug\GameDesign.pdb (Full PDB)
