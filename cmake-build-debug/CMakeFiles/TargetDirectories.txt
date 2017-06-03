@@ -1,3 +1,0 @@
-C:/Users/Xinrea/Documents/GitHub/GameDesign/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/Xinrea/Documents/GitHub/GameDesign/cmake-build-debug/CMakeFiles/GameDesign.dir
-C:/Users/Xinrea/Documents/GitHub/GameDesign/cmake-build-debug/CMakeFiles/edit_cache.dir
