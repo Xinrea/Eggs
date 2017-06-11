@@ -100,6 +100,7 @@
     <ClCompile Include="GameStateManager.c" />
     <ClCompile Include="Input.c" />
     <ClCompile Include="Level2.c" />
+    <ClCompile Include="Level3.c" />
     <ClCompile Include="LevelChoose.c" />
     <ClCompile Include="Level1.c" />
     <ClCompile Include="main.c" />
@@ -110,6 +111,7 @@
     <ClInclude Include="GameStateManager.h" />
     <ClInclude Include="Input.h" />
     <ClInclude Include="Level2.h" />
+    <ClInclude Include="Level3.h" />
     <ClInclude Include="LevelChoose.h" />
     <ClInclude Include="Level1.h" />
     <ClInclude Include="lib\3DPipelineTools.h" />

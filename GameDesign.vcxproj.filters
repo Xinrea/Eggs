@@ -36,6 +36,9 @@
     <ClCompile Include="Level2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level3.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameStateList.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Level2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
