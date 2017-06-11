@@ -1,2 +1,4 @@
-﻿  GameDesign.vcxproj -> C:\Users\Xinrea\Documents\GitHub\GameDesign\Debug\GameDesign.exe
+﻿  LevelChoose.c
+LevelChoose.c(28): warning C4091: “typedef ”: 没有声明变量时忽略“postion”的左侧
+  GameDesign.vcxproj -> C:\Users\Xinrea\Documents\GitHub\GameDesign\Debug\GameDesign.exe
   GameDesign.vcxproj -> C:\Users\Xinrea\Documents\GitHub\GameDesign\Debug\GameDesign.pdb (Full PDB)
