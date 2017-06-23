@@ -39,6 +39,12 @@
     <ClCompile Include="Level3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Level4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Level5.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameStateList.h">
@@ -108,6 +114,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Level3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Level5.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
